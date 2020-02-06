@@ -149,7 +149,14 @@ nav {
     padding: 71px 0 65px 0;
 }
 
-.reasons .label {
+.reasons .reasons_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.label {
     margin: 0 auto;
     width: 112px;
     height: 24px;
@@ -162,7 +169,7 @@ nav {
     padding: 5px 12px;
 }
 
-.reasons .title {
+.title {
     color: #222222;
     margin-top: 38px;
     font-size: 38px;
@@ -170,13 +177,6 @@ nav {
     line-height: 48px;
     text-transform: uppercase;
     text-align: center;
-}
-
-.reasons .reasons_block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
 }
 
 .reasons .reasons_block .reasons_round {
