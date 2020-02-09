@@ -1,3 +1,5 @@
+$main_color = #1eacc7
+
 *
     font-family: 'Roboto', san-serif
 
@@ -68,7 +70,7 @@ nav
     border: none
     border-bottom: 3px solid rgba(0, 0, 0, 0.07)
     border-radius: 4px
-    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+    background-image: linear-gradient(to top, $main_color 0%, #4ce2ff 100%)
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
     color: #ffffff
     font-size: 14px
@@ -116,7 +118,7 @@ nav
     border: none
     border-bottom: 3px solid rgba(0, 0, 0, 0.07)
     border-radius: 4px
-    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+    background-image: linear-gradient(to top, $main_color 0%, #4ce2ff 100%)
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
     color: #ffffff
     font-size: 18px
@@ -134,6 +136,7 @@ nav
     margin-top: 35px
 
 .label
+    position: relative
     margin: 0 auto
     width: 112px
     height: 24px
@@ -144,8 +147,13 @@ nav
     background-color: #000000
     text-align: center
     padding: 5px 12px
+    z-index: 2
+    &_white
+        background-color: #ffffff
+        color: #070716
 
 .title
+    position: relative
     color: #222222
     margin-top: 38px
     font-size: 38px
@@ -153,16 +161,21 @@ nav
     line-height: 48px
     text-transform: uppercase
     text-align: center
+    z-index: 2
+    &_white
+        color: #ffffff
 
 .subtitle
+    position: relative
     margin-top: 19px
     text-align: center
     color: #222222
-    font-family: Roboto
     font-size: 17px
     font-weight: 400
+    z-index: 2
+    &_white
+        color: #ffffff
        
-
 .reasons .reasons_block
 .reasons_round
     display: flex
@@ -171,14 +184,14 @@ nav
     margin-right: 26px
     width: 113px
     height: 113px
-    background-color: #1eacc7
+    background-color: $main_color
     border-radius: 100%
 
 .reasons_descr
     width: 341px
 
     .reasons_subtitle
-        color: #1eacc7
+        color: $main_color
         font-size: 17px
         font-weight: 400
         line-height: 21px
@@ -240,3 +253,65 @@ nav
             cursor: pointer
             img
                 width: 100%
+
+.choice
+    background: url(../img/bg/mobile_app.png) center center/cover no-repeat
+    min-height: 896px
+    padding: 57px 0 138px 0
+    position: relative
+    .black
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 499px
+        background-color: #070716
+        z-index: 1
+    &_img 
+        display: block
+        margin: 0 auto
+        margin-top: 56px
+        z-index: 2
+        position: relative
+    &_descr
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        text-align: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
